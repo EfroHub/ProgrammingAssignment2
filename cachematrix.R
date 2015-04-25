@@ -4,10 +4,12 @@
 ## time it is needed.
 
 
-makeCacheMatrix <- function(x = matrix()) {
 ## This function stores the original matrix and its inverse (if calculated)
 ## with the functions get and set and allows to access both, original
 ## and inverse matrix (if already calculated).
+
+makeCacheMatrix <- function(x = matrix()) {
+
     m <- NULL    
     set <- function(y) {                      ## "set" stores the input matrix
       x <<- y
